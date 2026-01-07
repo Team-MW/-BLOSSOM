@@ -1,15 +1,18 @@
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Lenis from 'lenis';
+import { AnimatePresence } from 'framer-motion';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
 import { Club } from './components/Club';
 import { Contact } from './components/Contact';
 import { Header } from './components/Header';
 import { Cursor } from './components/Cursor';
-
 import { Menu } from './components/Menu';
+import { Legal } from './components/Legal';
 
 function App() {
+  const [isLegalOpen, setIsLegalOpen] = useState(false);
+
   useEffect(() => {
     const lenis = new Lenis({
       duration: 1.2,
@@ -36,7 +39,11 @@ function App() {
       <Menu />
       <About />
       <Club />
-      <Contact />
+      <Contact onOpenLegal={() => setIsLegalOpen(true)} />
+
+      <AnimatePresence>
+        {isLegalOpen && <Legal onClose={() => setIsLegalOpen(false)} />}
+      </AnimatePresence>
     </main>
   );
 }

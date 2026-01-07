@@ -1,7 +1,6 @@
-import { motion } from 'framer-motion';
-import { Instagram, Facebook, MapPin, Mail, Clock } from 'lucide-react';
+import { Instagram, Facebook, MapPin, Mail, Clock, Phone } from 'lucide-react';
 
-export const Contact = () => (
+export const Contact = ({ onOpenLegal }: { onOpenLegal: () => void }) => (
     <section id="contact" className="py-20 bg-[var(--color-pop-pink)] text-[var(--color-pop-dark)] relative overflow-hidden">
 
         {/* Decorative Wave Top */}
@@ -12,10 +11,7 @@ export const Contact = () => (
         </div>
 
         <div className="container mx-auto px-6 pt-20">
-            <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+            <div
                 className="bg-white rounded-3xl md:rounded-[3rem] p-6 md:p-20 shadow-xl max-w-5xl mx-auto border-4 border-[var(--color-pop-dark)]"
             >
                 <div className="grid md:grid-cols-2 gap-12">
@@ -23,14 +19,42 @@ export const Contact = () => (
                     <div>
                         <h2 className="text-4xl md:text-6xl font-serif mb-8 text-[var(--color-pop-green)]">On se voit quand ?</h2>
 
-                        <div className="space-y-6 text-lg font-medium">
+                        <div
+                            className="space-y-6 text-lg font-medium"
+                        >
                             <div className="flex items-start gap-4">
                                 <MapPin className="w-6 h-6 text-[var(--color-pop-yellow)] shrink-0 mt-1" />
-                                <p>5 Place du Capitole,<br />31000 Toulouse</p>
+                                <p>11 Rue des Trois Renards,<br />31000 Toulouse</p>
+                            </div>
+                            <div className="flex items-start gap-4">
+                                <Phone className="w-6 h-6 text-[var(--color-pop-yellow)] shrink-0 mt-1" />
+                                <a href="tel:+33650216450" className="hover:text-[var(--color-pop-green)]">06 50 21 64 50</a>
                             </div>
                             <div className="flex items-start gap-4">
                                 <Clock className="w-6 h-6 text-[var(--color-pop-yellow)] shrink-0 mt-1" />
-                                <p>Mardi - Dimanche<br />09h00 - 18h00</p>
+                                <div className="text-sm">
+                                    <p className="flex justify-between w-48 border-b border-[var(--color-pop-dark)]/10 pb-1 mb-1">
+                                        <span>Lundi</span> <span>12:00–17:30</span>
+                                    </p>
+                                    <p className="flex justify-between w-48 border-b border-[var(--color-pop-dark)]/10 pb-1 mb-1">
+                                        <span>Mardi</span> <span>11:30–19:00</span>
+                                    </p>
+                                    <p className="flex justify-between w-48 border-b border-[var(--color-pop-dark)]/10 pb-1 mb-1">
+                                        <span>Mercredi</span> <span className="text-[var(--color-pop-pink)] font-bold">Fermé</span>
+                                    </p>
+                                    <p className="flex justify-between w-48 border-b border-[var(--color-pop-dark)]/10 pb-1 mb-1">
+                                        <span>Jeudi</span> <span>12:00–19:00</span>
+                                    </p>
+                                    <p className="flex justify-between w-48 border-b border-[var(--color-pop-dark)]/10 pb-1 mb-1">
+                                        <span>Vendredi</span> <span>11:30–19:00</span>
+                                    </p>
+                                    <p className="flex justify-between w-48 border-b border-[var(--color-pop-dark)]/10 pb-1 mb-1">
+                                        <span>Samedi</span> <span>10:30–19:00</span>
+                                    </p>
+                                    <p className="flex justify-between w-48">
+                                        <span>Dimanche</span> <span>10:30–19:00</span>
+                                    </p>
+                                </div>
                             </div>
                             <div className="flex items-start gap-4">
                                 <Mail className="w-6 h-6 text-[var(--color-pop-yellow)] shrink-0 mt-1" />
@@ -55,10 +79,13 @@ export const Contact = () => (
                     </div>
 
                 </div>
-            </motion.div>
+            </div>
 
-            <div className="text-center mt-20 text-[var(--color-pop-dark)]/50 font-bold uppercase tracking-widest text-sm">
-                © 2026 Blossom Café - Développé par Microdidact
+            <div className="text-center mt-20 flex flex-col items-center gap-2 text-[var(--color-pop-dark)]/50 font-bold uppercase tracking-widest text-sm">
+                <span>© 2026 Blossom Café - Développé par Microdidact</span>
+                <button onClick={onOpenLegal} className="hover:text-[var(--color-pop-dark)] underline decoration-2 underline-offset-4 decoration-[var(--color-pop-green)] transition-all">
+                    Mentions Légales
+                </button>
             </div>
         </div>
     </section>

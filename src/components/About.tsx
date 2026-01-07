@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+
 
 export const About = () => (
     <section id="concept" className="relative min-h-[80vh] flex items-center justify-center py-20 bg-white">
@@ -12,10 +12,7 @@ export const About = () => (
         <div className="container mx-auto px-6 relative z-10">
             <div className="grid md:grid-cols-2 gap-12 items-center">
 
-                <motion.div
-                    initial={{ opacity: 0, x: -50 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
+                <div
                     className="relative"
                 >
                     <div className="absolute top-0 -left-4 w-full h-full bg-[var(--color-pop-yellow)] rounded-3xl rotate-[-2deg] z-0" />
@@ -27,12 +24,9 @@ export const About = () => (
                             Pancakes fluffy, Matcha latte onctueux, et une playlist qui groove.
                         </p>
                     </div>
-                </motion.div>
+                </div>
 
-                <motion.div
-                    initial={{ opacity: 0, x: 50 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
+                <div
                     className="text-center md:text-left"
                 >
                     <h2 className="text-5xl md:text-7xl font-serif mb-6 text-[var(--color-pop-dark)]">
@@ -45,7 +39,7 @@ export const About = () => (
                     <a href="#" className="inline-block border-b-2 border-[var(--color-pop-dark)] pb-1 font-bold text-[var(--color-pop-dark)] hover:text-[var(--color-pop-green)] hover:border-[var(--color-pop-green)] transition-colors">
                         Découvrir notre histoire
                     </a>
-                </motion.div>
+                </div>
 
             </div>
         </div>

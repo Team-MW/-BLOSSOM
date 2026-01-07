@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme {
+  /* Palette Pop / Vibrant */
+  --color-pop-pink: #F4C2D7;
+  /* Rose Bonbon pastel */
+  --color-pop-green: #00A676;
+  /* Vert Jungle / Émeraude */
+  --color-pop-dark: #1B4D3E;
+  /* Vert très foncé (presque noir) pour le texte */
+  --color-pop-yellow: #F2C94C;
+  /* Jaune accent */
+  --color-pop-cream: #FFF9F0;
+  /* Blanc cassé chaud */
+
+  /* Mapping sémantique */
+  --color-background: var(--color-pop-pink);
+  --color-foreground: var(--color-pop-dark);
+  --color-primary: var(--color-pop-green);
+  --color-secondary: var(--color-pop-yellow);
+
+  /* Typographie */
+  --font-sans: 'DM Sans', sans-serif;
+  --font-serif: 'Fraunces', serif;
+  /* Look retro/bold */
+
+  /* Animations custom */
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-spin-slow: spin 10s linear infinite;
+
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+}
+
+/* Base Styles */
+:root {
+  --background: #F4C2D7;
+  --foreground: #1B4D3E;
+}
+
+body {
+  background-color: var(--color-pop-pink);
+  color: var(--color-pop-dark);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "rlig" 1, "calt" 1;
+  overflow-x: hidden;
+  /* Prevent horizontal scroll from decorative elements */
+  cursor: none;
+  /* Hide default cursor */
+}
+
+a,
+button {
+  cursor: none;
+  /* Ensure links don't show pointer */
+}
+
+/* Typography Helpers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  /* Bold by default for this style */
+}
+
+/* Utilities */
+.text-outline {
+  -webkit-text-stroke: 1px var(--color-pop-dark);
+  color: transparent;
+}
+
+.text-outline-white {
+  -webkit-text-stroke: 2px white;
+  color: transparent;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}

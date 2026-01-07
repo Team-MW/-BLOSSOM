@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 
 export const Club = () => (
-    <section className="relative min-h-[80vh] flex flex-col items-center justify-center py-20 bg-[var(--color-pop-dark)] text-[var(--color-pop-cream)] overflow-hidden">
+    <section id="club" className="relative min-h-[80vh] flex flex-col items-center justify-center py-20 bg-[var(--color-pop-dark)] text-[var(--color-pop-cream)] overflow-hidden">
 
         {/* Background Patterns */}
         <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--color-pop-pink)_1px,_transparent_1px)] bg-[size:20px_20px]" />

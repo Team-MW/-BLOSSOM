@@ -7,6 +7,8 @@ import { Contact } from './components/Contact';
 import { Header } from './components/Header';
 import { Cursor } from './components/Cursor';
 
+import { Menu } from './components/Menu';
+
 function App() {
   useEffect(() => {
     const lenis = new Lenis({
@@ -31,6 +33,7 @@ function App() {
       <Cursor />
       <Header />
       <Hero />
+      <Menu />
       <About />
       <Club />
       <Contact />

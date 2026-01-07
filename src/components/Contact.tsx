@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { Instagram, Facebook, MapPin, Mail, Clock } from 'lucide-react';
 
 export const Contact = () => (
-    <section className="py-20 bg-[var(--color-pop-pink)] text-[var(--color-pop-dark)] relative overflow-hidden">
+    <section id="contact" className="py-20 bg-[var(--color-pop-pink)] text-[var(--color-pop-dark)] relative overflow-hidden">
 
         {/* Decorative Wave Top */}
         <div className="absolute top-[-1px] left-0 w-full overflow-hidden leading-[0] rotate-180">

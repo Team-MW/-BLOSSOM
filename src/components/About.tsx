@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 
 export const About = () => (
-    <section id="about" className="relative min-h-[80vh] flex items-center justify-center py-20 bg-white">
+    <section id="concept" className="relative min-h-[80vh] flex items-center justify-center py-20 bg-white">
         {/* Wavy separator top */}
         <div className="absolute top-[-1px] left-0 w-full overflow-hidden leading-[0] rotate-180">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" className="relative block h-[60px] md:h-[100px] w-full fill-[var(--color-pop-pink)]">

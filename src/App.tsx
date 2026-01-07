@@ -9,6 +9,7 @@ import { Header } from './components/Header';
 import { Cursor } from './components/Cursor';
 import { Menu } from './components/Menu';
 import { Legal } from './components/Legal';
+import { Reviews } from './components/Reviews';
 
 function App() {
   const [isLegalOpen, setIsLegalOpen] = useState(false);
@@ -39,6 +40,7 @@ function App() {
       <Menu />
       <About />
       <Club />
+      <Reviews />
       <Contact onOpenLegal={() => setIsLegalOpen(true)} />
 
       <AnimatePresence>

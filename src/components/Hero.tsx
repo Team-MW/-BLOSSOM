@@ -23,7 +23,7 @@ export const Hero = () => {
                     className="text-[12vw] md:text-9xl font-black text-[var(--color-pop-dark)] leading-[0.9] tracking-tighter drop-shadow-sm mb-6"
                 >
                     <span className="block text-outline-white drop-shadow-none text-transparent stroke-2">BLOSSOM</span>
-                    <span className="block text-[var(--color-pop-dark)]">CAFÉ</span>
+                    <span className="block text-[var(--color-pop-dark)]">COFFEE</span>
                 </h1>
 
                 <p

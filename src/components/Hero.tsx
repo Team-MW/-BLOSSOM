@@ -40,7 +40,7 @@ export const Hero = () => {
                 >
                     Brunch. Coffee. Good Vibes.
                     <br />
-                    <span className="text-sm font-bold uppercase tracking-widest mt-2 block text-[var(--color-pop-green)]">Paris 9ème</span>
+                    <span className="text-sm font-bold uppercase tracking-widest mt-2 block text-[var(--color-pop-green)]">Toulouse Centre</span>
                 </motion.p>
 
                 <motion.div

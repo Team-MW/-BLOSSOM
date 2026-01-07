@@ -22,7 +22,7 @@ export const Club = () => (
             </h2>
 
             <p className="text-xl md:text-2xl font-medium opacity-90 mb-12 max-w-xl mx-auto leading-relaxed">
-                Le cercle le plus <span className="text-[var(--color-pop-yellow)] italic">croustillant</span> de Paris. Événements privés, dégustations en avant-première & good vibes.
+                Le cercle le plus <span className="text-[var(--color-pop-yellow)] italic">croustillant</span> de Toulouse. Événements privés, dégustations en avant-première & good vibes.
             </p>
 
             <div className="flex flex-col md:flex-row gap-6 justify-center items-center">

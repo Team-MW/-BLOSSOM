@@ -26,7 +26,7 @@ export const Contact = () => (
                         <div className="space-y-6 text-lg font-medium">
                             <div className="flex items-start gap-4">
                                 <MapPin className="w-6 h-6 text-[var(--color-pop-yellow)] shrink-0 mt-1" />
-                                <p>12 Rue de la Paix,<br />75002 Paris</p>
+                                <p>5 Place du Capitole,<br />31000 Toulouse</p>
                             </div>
                             <div className="flex items-start gap-4">
                                 <Clock className="w-6 h-6 text-[var(--color-pop-yellow)] shrink-0 mt-1" />

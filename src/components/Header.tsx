@@ -34,12 +34,12 @@ export const Header = () => {
                     </nav>
 
                     {/* CTA Mini */}
-                    <a href="#book" className="hidden md:block ml-2 px-5 py-2 bg-[var(--color-pop-yellow)] text-[var(--color-pop-dark)] rounded-full font-bold text-sm border border-[var(--color-pop-dark)] hover:shadow-[2px_2px_0px_0px_var(--color-pop-dark)] transition-all">
+                    <a href="tel:+33650216450" className="hidden md:block ml-2 px-5 py-2 bg-[var(--color-pop-yellow)] text-[var(--color-pop-dark)] rounded-full font-bold text-sm border border-[var(--color-pop-dark)] hover:shadow-[2px_2px_0px_0px_var(--color-pop-dark)] transition-all">
                         Book
                     </a>
 
                     {/* Mobile Menu Toggle */}
-                    <button 
+                    <button
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
                         className="md:hidden w-10 h-10 flex items-center justify-center bg-[var(--color-pop-yellow)] rounded-full border border-[var(--color-pop-dark)] text-[var(--color-pop-dark)]"
                     >
@@ -69,8 +69,8 @@ export const Header = () => {
                                     {item}
                                 </a>
                             ))}
-                            <a 
-                                href="#book" 
+                            <a
+                                href="tel:+33650216450"
                                 onClick={() => setIsMenuOpen(false)}
                                 className="mt-8 px-8 py-4 bg-[var(--color-pop-yellow)] text-[var(--color-pop-dark)] rounded-full font-bold text-xl border-2 border-[var(--color-pop-dark)] shadow-[4px_4px_0px_0px_var(--color-pop-dark)]"
                             >

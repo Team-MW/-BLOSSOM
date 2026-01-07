@@ -121,7 +121,7 @@ export const Menu = () => {
                 <MenuSection title="Boissons & Coffee" items={boissons} colorClass="var(--color-pop-green)" />
 
                 <div className="text-center mt-16">
-                    <a href="#book" className="inline-block px-10 py-5 bg-[var(--color-pop-dark)] text-white font-bold rounded-full shadow-[4px_4px_0px_0px_var(--color-pop-green)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_var(--color-pop-green)] transition-all uppercase tracking-wide">
+                    <a href="tel:+33650216450" className="inline-block px-10 py-5 bg-[var(--color-pop-dark)] text-white font-bold rounded-full shadow-[4px_4px_0px_0px_var(--color-pop-green)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_var(--color-pop-green)] transition-all uppercase tracking-wide">
                         Réserver ma table
                     </a>
                 </div>

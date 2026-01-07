@@ -56,13 +56,10 @@ body {
   font-feature-settings: "rlig" 1, "calt" 1;
   overflow-x: hidden;
   /* Prevent horizontal scroll from decorative elements */
-  cursor: none;
-  /* Hide default cursor */
 }
 
 a,
 button {
-  cursor: none;
   /* Ensure links don't show pointer */
 }
 

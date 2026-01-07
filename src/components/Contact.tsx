@@ -58,7 +58,7 @@ export const Contact = () => (
             </motion.div>
 
             <div className="text-center mt-20 text-[var(--color-pop-dark)]/50 font-bold uppercase tracking-widest text-sm">
-                © 2026 Blossom Café - Designed with ❤️
+                © 2026 Blossom Café - Développé par Microdidact
             </div>
         </div>
     </section>

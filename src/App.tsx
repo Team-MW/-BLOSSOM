@@ -27,7 +27,7 @@ function App() {
   }, []);
 
   return (
-    <main className="w-full bg-background text-foreground overflow-x-hidden selection:bg-[var(--color-pop-yellow)] selection:text-[var(--color-pop-dark)] cursor-none">
+    <main className="w-full bg-background text-foreground overflow-x-hidden selection:bg-[var(--color-pop-yellow)] selection:text-[var(--color-pop-dark)]">
       <Cursor />
       <Header />
       <Hero />

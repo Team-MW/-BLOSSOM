@@ -1,3 +1,5 @@
+import brunchMenuPdf from '../assets/carte-brunch-toulouse-blossom-coffee.pdf';
+
 const MenuSection = ({ title, items, colorClass }: { title: string, items: { name: string, desc: string, price: string }[], colorClass: string }) => (
     <div className="mb-12 last:mb-0">
         <h3
@@ -120,9 +122,17 @@ export const Menu = () => {
                 <MenuSection title="Pancakes Salés" items={pancakesSales} colorClass="var(--color-pop-yellow)" />
                 <MenuSection title="Boissons & Coffee" items={boissons} colorClass="var(--color-pop-green)" />
 
-                <div className="text-center mt-16">
+                <div className="text-center mt-16 flex flex-col md:flex-row justify-center items-center gap-6">
                     <a href="tel:+33650216450" className="inline-block px-10 py-5 bg-[var(--color-pop-dark)] text-white font-bold rounded-full shadow-[4px_4px_0px_0px_var(--color-pop-green)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_var(--color-pop-green)] transition-all uppercase tracking-wide">
                         Réserver ma table
+                    </a>
+                    <a
+                        href={brunchMenuPdf}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block px-10 py-5 bg-white text-[var(--color-pop-dark)] border-2 border-[var(--color-pop-dark)] font-bold rounded-full shadow-[4px_4px_0px_0px_var(--color-pop-dark)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_var(--color-pop-dark)] transition-all uppercase tracking-wide"
+                    >
+                        Voir le Menu (PDF)
                     </a>
                 </div>
 

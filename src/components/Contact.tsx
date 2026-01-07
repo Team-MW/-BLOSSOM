@@ -79,11 +79,11 @@ export const Contact = ({ onOpenLegal }: { onOpenLegal: () => void }) => (
                                 </p>
 
                                 <div className="flex gap-4">
-                                    <a href="https://www.instagram.com/blossom.coffees/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-5 py-3 bg-white rounded-full border-2 border-[var(--color-pop-dark)] hover:bg-[var(--color-pop-pink)] transition-all font-bold shadow-[4px_4px_0px_0px_var(--color-pop-dark)] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] text-sm md:text-base">
+                                    <a href="https://www.instagram.com/blossom.coffees/" target="_blank" rel="noopener noreferrer" aria-label="Suivez-nous sur Instagram" className="flex items-center gap-2 px-5 py-3 bg-white rounded-full border-2 border-[var(--color-pop-dark)] hover:bg-[var(--color-pop-pink)] transition-all font-bold shadow-[4px_4px_0px_0px_var(--color-pop-dark)] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] text-sm md:text-base">
                                         <Instagram size={20} />
                                         <span>Insta</span>
                                     </a>
-                                    <a href="https://www.tiktok.com/@blossom.coffee" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-5 py-3 bg-white rounded-full border-2 border-[var(--color-pop-dark)] hover:bg-[var(--color-pop-pink)] transition-all font-bold shadow-[4px_4px_0px_0px_var(--color-pop-dark)] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] text-sm md:text-base">
+                                    <a href="https://www.tiktok.com/@blossom.coffee" target="_blank" rel="noopener noreferrer" aria-label="Suivez-nous sur TikTok" className="flex items-center gap-2 px-5 py-3 bg-white rounded-full border-2 border-[var(--color-pop-dark)] hover:bg-[var(--color-pop-pink)] transition-all font-bold shadow-[4px_4px_0px_0px_var(--color-pop-dark)] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] text-sm md:text-base">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-tiktok">
                                             <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
                                         </svg>

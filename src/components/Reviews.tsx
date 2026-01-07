@@ -102,6 +102,7 @@ export const Reviews = () => {
                         href="https://www.google.com/search?q=blossom+coffee+toulouse+reviews"
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label="Lire tous les avis sur Google"
                         className="inline-flex items-center gap-3 px-8 py-4 bg-white text-[var(--color-pop-dark)] rounded-full font-bold text-lg border-2 border-[var(--color-pop-dark)] shadow-[4px_4px_0px_0px_var(--color-pop-dark)] hover:shadow-[2px_2px_0px_0px_var(--color-pop-dark)] hover:translate-x-[2px] hover:translate-y-[2px] transition-all"
                     >
                         <MessageCircle size={24} />

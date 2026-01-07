@@ -37,10 +37,10 @@ export const Hero = () => {
                 <div
                     className="flex flex-col md:flex-row gap-4 w-full md:w-auto px-4 md:px-0"
                 >
-                    <a href="#menu" className="w-full md:w-auto px-8 py-4 bg-[var(--color-pop-green)] text-white font-bold rounded-full shadow-[4px_4px_0px_0px_var(--color-pop-dark)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_var(--color-pop-dark)] transition-all border-2 border-[var(--color-pop-dark)] uppercase tracking-wide">
+                    <a href="#menu" aria-label="Voir le menu" className="w-full md:w-auto px-8 py-4 bg-[var(--color-pop-green)] text-white font-bold rounded-full shadow-[4px_4px_0px_0px_var(--color-pop-dark)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_var(--color-pop-dark)] transition-all border-2 border-[var(--color-pop-dark)] uppercase tracking-wide">
                         Le Menu
                     </a>
-                    <a href="tel:+33650216450" className="w-full md:w-auto px-8 py-4 bg-[var(--color-pop-yellow)] text-[var(--color-pop-dark)] font-bold rounded-full shadow-[4px_4px_0px_0px_var(--color-pop-dark)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_var(--color-pop-dark)] transition-all border-2 border-[var(--color-pop-dark)] uppercase tracking-wide">
+                    <a href="tel:+33650216450" aria-label="Réserver une table par téléphone" className="w-full md:w-auto px-8 py-4 bg-[var(--color-pop-yellow)] text-[var(--color-pop-dark)] font-bold rounded-full shadow-[4px_4px_0px_0px_var(--color-pop-dark)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_var(--color-pop-dark)] transition-all border-2 border-[var(--color-pop-dark)] uppercase tracking-wide">
                         Réserver
                     </a>
                 </div>

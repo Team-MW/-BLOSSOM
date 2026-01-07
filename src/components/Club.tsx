@@ -17,7 +17,7 @@ export const Club = () => (
                 Membres Uniquement
             </div>
 
-            <h2 className="text-5xl md:text-8xl font-serif mb-8 text-[var(--color-pop-pink)] drop-shadow-lg">
+            <h2 className="text-5xl md:text-8xl font-serif mb-8 text-[var(--color-pop-pink)] drop-shadow-lg leading-tight">
                 Blossom<br />Circle Club
             </h2>
 

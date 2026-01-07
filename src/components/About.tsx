@@ -19,8 +19,8 @@ export const About = () => (
                     className="relative"
                 >
                     <div className="absolute top-0 -left-4 w-full h-full bg-[var(--color-pop-yellow)] rounded-3xl rotate-[-2deg] z-0" />
-                    <div className="relative bg-[var(--color-pop-green)] p-10 rounded-3xl rotate-2 text-white shadow-xl z-10">
-                        <h3 className="text-4xl font-serif mb-4">Le Concept</h3>
+                    <div className="relative bg-[var(--color-pop-green)] p-6 md:p-10 rounded-3xl rotate-2 text-white shadow-xl z-10">
+                        <h3 className="text-3xl md:text-4xl font-serif mb-4">Le Concept</h3>
                         <p className="text-lg font-medium leading-relaxed">
                             Plus qu'un café, une destination. Ici, on prend le petit-déjeuner au sérieux (mais pas nous-mêmes).
                             <br /><br />

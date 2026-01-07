@@ -16,7 +16,7 @@ export const Contact = () => (
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="bg-white rounded-[3rem] p-10 md:p-20 shadow-xl max-w-5xl mx-auto border-4 border-[var(--color-pop-dark)]"
+                className="bg-white rounded-3xl md:rounded-[3rem] p-6 md:p-20 shadow-xl max-w-5xl mx-auto border-4 border-[var(--color-pop-dark)]"
             >
                 <div className="grid md:grid-cols-2 gap-12">
 

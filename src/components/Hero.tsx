@@ -15,7 +15,7 @@ export const Hero = () => {
                 <motion.div
                     animate={{ rotate: 360 }}
                     transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                    className="absolute -top-20 -right-4 md:-right-20 w-24 h-24 md:w-32 md:h-32 bg-[var(--color-pop-green)] rounded-full flex items-center justify-center text-white font-bold text-xs uppercase tracking-widest z-20 shadow-lg border-2 border-white border-dashed"
+                    className="absolute -top-16 -right-2 md:-right-20 w-20 h-20 md:w-32 md:h-32 bg-[var(--color-pop-green)] rounded-full flex items-center justify-center text-white font-bold text-[10px] md:text-xs uppercase tracking-widest z-20 shadow-lg border-2 border-white border-dashed"
                 >
                     <div className="text-center p-2 leading-tight">
                         Nouveau<br />Concept<br />2026
@@ -26,7 +26,7 @@ export const Hero = () => {
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.8, ease: "backOut" }}
-                    className="text-6xl md:text-9xl font-black text-[var(--color-pop-dark)] leading-[0.9] tracking-tighter drop-shadow-sm mb-6"
+                    className="text-[12vw] md:text-9xl font-black text-[var(--color-pop-dark)] leading-[0.9] tracking-tighter drop-shadow-sm mb-6"
                 >
                     <span className="block text-outline-white drop-shadow-none text-transparent stroke-2">BLOSSOM</span>
                     <span className="block text-[var(--color-pop-dark)]">CAFÉ</span>
@@ -36,23 +36,23 @@ export const Hero = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.4 }}
-                    className="text-lg md:text-2xl font-sans font-medium text-[var(--color-pop-dark)]/90 max-w-lg mx-auto mb-10 bg-white/40 backdrop-blur-sm p-4 rounded-2xl rotate-1"
+                    className="text-base md:text-2xl font-sans font-medium text-[var(--color-pop-dark)]/90 max-w-xs md:max-w-lg mx-auto mb-8 md:mb-10 bg-white/40 backdrop-blur-sm p-4 rounded-2xl rotate-1"
                 >
                     Brunch. Coffee. Good Vibes.
                     <br />
-                    <span className="text-sm font-bold uppercase tracking-widest mt-2 block text-[var(--color-pop-green)]">Toulouse Centre</span>
+                    <span className="text-xs md:text-sm font-bold uppercase tracking-widest mt-2 block text-[var(--color-pop-green)]">Toulouse Centre</span>
                 </motion.p>
 
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.6 }}
-                    className="flex gap-4"
+                    className="flex flex-col md:flex-row gap-4 w-full md:w-auto px-4 md:px-0"
                 >
-                    <a href="#menu" className="px-8 py-4 bg-[var(--color-pop-green)] text-white font-bold rounded-full shadow-[4px_4px_0px_0px_var(--color-pop-dark)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_var(--color-pop-dark)] transition-all border-2 border-[var(--color-pop-dark)] uppercase tracking-wide">
+                    <a href="#menu" className="w-full md:w-auto px-8 py-4 bg-[var(--color-pop-green)] text-white font-bold rounded-full shadow-[4px_4px_0px_0px_var(--color-pop-dark)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_var(--color-pop-dark)] transition-all border-2 border-[var(--color-pop-dark)] uppercase tracking-wide">
                         Le Menu
                     </a>
-                    <a href="#book" className="px-8 py-4 bg-[var(--color-pop-yellow)] text-[var(--color-pop-dark)] font-bold rounded-full shadow-[4px_4px_0px_0px_var(--color-pop-dark)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_var(--color-pop-dark)] transition-all border-2 border-[var(--color-pop-dark)] uppercase tracking-wide">
+                    <a href="#book" className="w-full md:w-auto px-8 py-4 bg-[var(--color-pop-yellow)] text-[var(--color-pop-dark)] font-bold rounded-full shadow-[4px_4px_0px_0px_var(--color-pop-dark)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_var(--color-pop-dark)] transition-all border-2 border-[var(--color-pop-dark)] uppercase tracking-wide">
                         Réserver
                     </a>
                 </motion.div>

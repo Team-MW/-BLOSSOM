@@ -42,17 +42,7 @@ export const Legal = ({ onClose }: { onClose: () => void }) => {
                         </p>
                     </section>
 
-                    <section>
-                        <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
-                            <span className="w-3 h-3 bg-[var(--color-pop-yellow)] rounded-full"></span>
-                            Hébergement
-                        </h3>
-                        <p className="opacity-80 leading-relaxed">
-                            Le site est hébergé par la société <strong>Vercel Inc.</strong><br />
-                            Adresse : 340 S Lemon Ave #4133 Walnut, CA 91789, USA<br />
-                            Site web : https://vercel.com
-                        </p>
-                    </section>
+
 
                     <section>
                         <h3 className="text-xl font-bold mb-4 flex items-center gap-2">

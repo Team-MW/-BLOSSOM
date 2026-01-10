@@ -43,7 +43,7 @@ function ParallaxStrip({ children, baseVelocity = 100 }: ParallaxProps) {
     // For drag physics
     const dragFactor = useRef<number>(0);
 
-    useAnimationFrame((t, delta) => {
+    useAnimationFrame((_t, delta) => {
         // Reduced base movement for "slower" feel
         let moveBy = directionFactor.current * baseVelocity * (delta / 1000);
 
@@ -73,7 +73,7 @@ function ParallaxStrip({ children, baseVelocity = 100 }: ParallaxProps) {
             <motion.div
                 className="scroller flex flex-nowrap gap-4"
                 style={{ x }}
-                onPan={(e, info) => {
+                onPan={(_e, info) => {
                     // High sensitivity for direct control feeling
                     dragFactor.current += info.delta.x * 2;
                 }}

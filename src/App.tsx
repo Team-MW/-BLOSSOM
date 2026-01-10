@@ -8,6 +8,7 @@ import { Contact } from './components/Contact';
 import { Header } from './components/Header';
 import { Cursor } from './components/Cursor';
 import { Menu } from './components/Menu';
+import { ImageStrip } from './components/ImageStrip';
 import { Legal } from './components/Legal';
 import { Reviews } from './components/Reviews';
 
@@ -38,6 +39,7 @@ function App() {
       <Header />
       <Hero />
       <Menu />
+      <ImageStrip />
       <About />
       <Club />
       <Reviews />

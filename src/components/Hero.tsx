@@ -1,3 +1,4 @@
+import brunchMenuPdf from '../assets/carte-brunch-toulouse-blossom-coffee.pdf';
 
 export const Hero = () => {
     return (
@@ -12,10 +13,10 @@ export const Hero = () => {
 
                 {/* Floating Sticker Effect */}
                 <div
-                    className="absolute -top-16 -right-2 md:-right-20 w-20 h-20 md:w-32 md:h-32 bg-[var(--color-pop-green)] rounded-full flex items-center justify-center text-white font-bold text-[10px] md:text-xs uppercase tracking-widest z-20 shadow-lg border-2 border-white border-dashed rotate-12"
+                    className="absolute -top-16 -right-2 md:-right-20 w-24 h-24 md:w-36 md:h-36 bg-[var(--color-pop-green)] rounded-full flex items-center justify-center text-white font-bold text-[10px] md:text-xs uppercase tracking-widest z-20 shadow-lg border-2 border-white border-dashed rotate-12"
                 >
                     <div className="text-center p-2 leading-tight">
-                        Nouveau<br />Concept<br />2026
+                        11 Rue<br />Trois Renards<br />Toulouse
                     </div>
                 </div>
 
@@ -37,7 +38,7 @@ export const Hero = () => {
                 <div
                     className="flex flex-col md:flex-row gap-4 w-full md:w-auto px-4 md:px-0"
                 >
-                    <a href="#menu" aria-label="Voir le menu" className="w-full md:w-auto px-8 py-4 bg-[var(--color-pop-green)] text-white font-bold rounded-full shadow-[4px_4px_0px_0px_var(--color-pop-dark)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_var(--color-pop-dark)] transition-all border-2 border-[var(--color-pop-dark)] uppercase tracking-wide">
+                    <a href={brunchMenuPdf} target="_blank" rel="noopener noreferrer" aria-label="Voir le menu (PDF)" className="w-full md:w-auto px-8 py-4 bg-[var(--color-pop-green)] text-white font-bold rounded-full shadow-[4px_4px_0px_0px_var(--color-pop-dark)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_var(--color-pop-dark)] transition-all border-2 border-[var(--color-pop-dark)] uppercase tracking-wide">
                         Le Menu
                     </a>
                     <a href="tel:+33650216450" aria-label="Réserver une table par téléphone" className="w-full md:w-auto px-8 py-4 bg-[var(--color-pop-yellow)] text-[var(--color-pop-dark)] font-bold rounded-full shadow-[4px_4px_0px_0px_var(--color-pop-dark)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_var(--color-pop-dark)] transition-all border-2 border-[var(--color-pop-dark)] uppercase tracking-wide">

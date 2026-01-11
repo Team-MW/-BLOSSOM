@@ -3,7 +3,6 @@ import Lenis from 'lenis';
 import { AnimatePresence } from 'framer-motion';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
-import { Club } from './components/Club';
 import { Contact } from './components/Contact';
 import { Header } from './components/Header';
 import { Cursor } from './components/Cursor';
@@ -11,6 +10,10 @@ import { Menu } from './components/Menu';
 import { ImageStrip } from './components/ImageStrip';
 import { Legal } from './components/Legal';
 import { Reviews } from './components/Reviews';
+import { OurConcept } from './components/OurConcept';
+import { Location } from './components/Location';
+import { FAQ } from './components/FAQ';
+import { RevealSection } from './components/RevealSection';
 
 function App() {
   const [isLegalOpen, setIsLegalOpen] = useState(false);
@@ -38,12 +41,28 @@ function App() {
       <Cursor />
       <Header />
       <Hero />
-      <Menu />
-      <ImageStrip />
-      <About />
-      <Club />
-      <Reviews />
-      <Contact onOpenLegal={() => setIsLegalOpen(true)} />
+      <OurConcept />
+      <RevealSection>
+        <Menu />
+      </RevealSection>
+      <RevealSection>
+        <ImageStrip />
+      </RevealSection>
+      <RevealSection>
+        <About />
+      </RevealSection>
+      <RevealSection>
+        <FAQ />
+      </RevealSection>
+      <RevealSection>
+        <Location />
+      </RevealSection>
+      <RevealSection>
+        <Reviews />
+      </RevealSection>
+      <RevealSection>
+        <Contact onOpenLegal={() => setIsLegalOpen(true)} />
+      </RevealSection>
 
       <AnimatePresence>
         {isLegalOpen && <Legal onClose={() => setIsLegalOpen(false)} />}

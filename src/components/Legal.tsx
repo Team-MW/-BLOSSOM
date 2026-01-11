@@ -16,15 +16,18 @@ export const Legal = ({ onClose }: { onClose: () => void }) => {
                 className="bg-white w-full max-w-4xl max-h-[90vh] rounded-3xl overflow-hidden shadow-2xl flex flex-col relative"
             >
                 {/* Header */}
-                <div className="p-6 border-b border-gray-100 flex justify-between items-center bg-[var(--color-pop-cream)]">
-                    <h2 className="text-2xl font-serif font-bold text-[var(--color-pop-dark)]">Mentions Légales</h2>
+                <div className="p-4 md:p-6 border-b border-gray-100 flex justify-between items-center bg-[var(--color-pop-cream)] sticky top-0 z-10">
+                    <h2 className="text-xl md:text-2xl font-serif font-bold text-[var(--color-pop-dark)]">Mentions Légales</h2>
                     <button onClick={onClose} className="p-2 hover:bg-gray-200 rounded-full transition-colors">
                         <X size={24} />
                     </button>
                 </div>
 
                 {/* Content */}
-                <div className="p-8 overflow-y-auto space-y-8 text-[var(--color-pop-dark)]">
+                <div
+                    data-lenis-prevent
+                    className="p-4 md:p-8 overflow-y-auto space-y-6 md:space-y-8 text-[var(--color-pop-dark)] text-sm md:text-base overscroll-contain"
+                >
 
                     <section>
                         <h3 className="text-xl font-bold mb-4 flex items-center gap-2">

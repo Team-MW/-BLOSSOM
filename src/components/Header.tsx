@@ -46,7 +46,6 @@ export const Header = () => {
                     >
                         {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
                     </button>
-
                 </div>
             </motion.header>
 

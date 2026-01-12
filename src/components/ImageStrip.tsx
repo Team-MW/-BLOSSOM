@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import {
     motion,
     useScroll,
@@ -42,6 +42,7 @@ function ParallaxStrip({ children, baseVelocity = 100 }: ParallaxProps) {
 
     // For drag physics
     const dragFactor = useRef<number>(0);
+    const [isDragging, setIsDragging] = useState(false);
 
     useAnimationFrame((_t, delta) => {
         // Reduced base movement for "slower" feel
@@ -58,9 +59,8 @@ function ParallaxStrip({ children, baseVelocity = 100 }: ParallaxProps) {
 
         // Apply drag-based velocity (decaying)
         if (Math.abs(dragFactor.current) > 0.01) {
-            // Significant boost from drag and longer lasting decay for "vif"
             moveBy += dragFactor.current * (delta / 10);
-            dragFactor.current *= 0.92; // Decay
+            dragFactor.current *= 0.90; // Slightly faster decay for more "weight"
         }
 
         baseX.set(baseX.get() + moveBy);
@@ -68,14 +68,18 @@ function ParallaxStrip({ children, baseVelocity = 100 }: ParallaxProps) {
 
     return (
         <div
-            className="parallax overflow-hidden tracking-tight leading-[0.8] m-0 whitespace-nowrap flex flex-nowrap"
+            className="parallax overflow-hidden tracking-tight leading-[0.8] m-0 whitespace-nowrap flex flex-nowrap cursor-grab active:cursor-grabbing"
         >
             <motion.div
                 className="scroller flex flex-nowrap gap-4"
                 style={{ x }}
+                animate={{ scale: isDragging ? 0.95 : 1 }}
+                transition={{ duration: 0.2 }}
+                onPanStart={() => setIsDragging(true)}
+                onPanEnd={() => setIsDragging(false)}
                 onPan={(_e, info) => {
-                    // High sensitivity for direct control feeling
-                    dragFactor.current += info.delta.x * 2;
+                    // Lower sensitivity
+                    dragFactor.current += info.delta.x * 0.5;
                 }}
             >
                 {children}
@@ -91,7 +95,7 @@ export const ImageStrip = () => {
     const slides = [slide1, slide2, slide3, slide4, slide5];
 
     return (
-        <section className="w-full bg-[var(--color-pop-cream)] pb-20 pt-10 overflow-hidden space-y-8 cursor-grab active:cursor-grabbing">
+        <section className="w-full bg-[var(--color-pop-cream)] pb-20 pt-10 overflow-hidden space-y-8">
 
             {/* Row 1 - Slower base speed */}
             <ParallaxStrip baseVelocity={-0.5}>

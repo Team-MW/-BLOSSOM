@@ -38,7 +38,7 @@ export const OurConcept = () => {
     };
 
     return (
-        <section ref={containerRef} className="py-16 bg-[var(--color-pop-yellow)] overflow-hidden relative">
+        <section id="concept" ref={containerRef} className="py-16 bg-[var(--color-pop-yellow)] overflow-hidden relative">
 
             {/* Background Decor */}
             <div className="absolute top-0 left-0 w-full h-20 bg-[var(--color-pop-pink)] rotate-1 z-10 scale-110 -translate-y-10" />

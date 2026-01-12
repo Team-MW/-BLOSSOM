@@ -12,6 +12,7 @@ import { Legal } from './components/Legal';
 import { Reviews } from './components/Reviews';
 import { OurConcept } from './components/OurConcept';
 import { Location } from './components/Location';
+import { Club } from './components/Club';
 import { FAQ } from './components/FAQ';
 import { RevealSection } from './components/RevealSection';
 
@@ -59,6 +60,9 @@ function App() {
       </RevealSection>
       <RevealSection>
         <Reviews />
+      </RevealSection>
+      <RevealSection>
+        <Club />
       </RevealSection>
       <RevealSection>
         <Contact onOpenLegal={() => setIsLegalOpen(true)} />

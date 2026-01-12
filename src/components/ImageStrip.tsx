@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import {
     motion,
     useScroll,
@@ -42,7 +42,6 @@ function ParallaxStrip({ children, baseVelocity = 100 }: ParallaxProps) {
 
     // For drag physics
     const dragFactor = useRef<number>(0);
-    const [isDragging, setIsDragging] = useState(false);
 
     useAnimationFrame((_t, delta) => {
         // Reduced base movement for "slower" feel
@@ -73,10 +72,6 @@ function ParallaxStrip({ children, baseVelocity = 100 }: ParallaxProps) {
             <motion.div
                 className="scroller flex flex-nowrap gap-4"
                 style={{ x }}
-                animate={{ scale: isDragging ? 0.95 : 1 }}
-                transition={{ duration: 0.2 }}
-                onPanStart={() => setIsDragging(true)}
-                onPanEnd={() => setIsDragging(false)}
                 onPan={(_e, info) => {
                     // Lower sensitivity
                     dragFactor.current += info.delta.x * 0.5;

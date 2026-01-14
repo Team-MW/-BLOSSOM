@@ -98,10 +98,13 @@ export const Menu = () => {
         }
     ];
 
-    return (
+    // SECTION "LA CARTE" - HIDDEN (uncomment to display)
+    return null;
+
+    /* return (
         <section id="menu" className="py-20 bg-[var(--color-pop-cream)] relative overflow-hidden">
 
-            {/* Decorative Elements */}
+            {/* Decorative Elements *\/}
             <div className="absolute top-20 right-[-50px] w-64 h-64 bg-[var(--color-pop-pink)] rounded-full blur-3xl opacity-30 pointer-events-none" />
             <div className="absolute bottom-20 left-[-50px] w-80 h-80 bg-[var(--color-pop-yellow)] rounded-full blur-3xl opacity-20 pointer-events-none" />
 
@@ -130,13 +133,12 @@ export const Menu = () => {
                         href={brunchMenuPdf}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-block px-10 py-5 bg-white text-[var(--color-pop-dark)] border-2 border-[var(--color-pop-dark)] font-bold rounded-full shadow-[4px_4px_0px_0px_var(--color-pop-dark)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_var(--color-pop-dark)] transition-all uppercase tracking-wide"
-                    >
+                        className="inline-block px-10 py-5 bg-white text-[var(--color-pop-dark)] border-2 border-[var(--color-pop-dark)] font-bold rounded-full shadow-[4px_4px_0px_0px_var(--color-pop-dark)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_var(--color-pop-dark)] transition-all uppercase tracking-wide">
                         Voir le Menu (PDF)
                     </a>
                 </div>
 
             </div>
         </section>
-    );
+    ); */
 };

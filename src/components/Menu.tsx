@@ -1,6 +1,6 @@
-import brunchMenuPdf from '../assets/carte-brunch-toulouse-blossom-coffee.pdf';
+// import brunchMenuPdf from '../assets/carte-brunch-toulouse-blossom-coffee.pdf';
 
-const MenuSection = ({ title, items, colorClass }: { title: string, items: { name: string, desc: string, price: string }[], colorClass: string }) => (
+/* const MenuSection = ({ title, items, colorClass }: { title: string, items: { name: string, desc: string, price: string }[], colorClass: string }) => (
     <div className="mb-12 last:mb-0">
         <h3
             className={`text-3xl md:text-5xl font-serif mb-8 text-[var(--color-pop-dark)] uppercase tracking-tight`}
@@ -26,10 +26,10 @@ const MenuSection = ({ title, items, colorClass }: { title: string, items: { nam
             ))}
         </div>
     </div>
-);
+); */
 
 export const Menu = () => {
-    const pancakesSucres = [
+    /* const pancakesSucres = [
         {
             name: "Fruits de Saison",
             desc: "2 gros pancakes, Fruits de saison, Crémeux mascarpone à la vanille, Noisettes torréfiées",
@@ -96,7 +96,7 @@ export const Menu = () => {
             desc: "Banane, Fraise, Orange pressée, Gingembre",
             price: "5,50€"
         }
-    ];
+    ]; */
 
     // SECTION "LA CARTE" - HIDDEN (uncomment to display)
     return null;

@@ -1,12 +1,6 @@
-import brunchMenuPdf from '../assets/carte-brunch-toulouse-blossom-coffee.pdf';
-
-
+import carteImg from '../assets/carte.png';
 
 export const Menu = () => {
-
-
-
-
 
 
     return (
@@ -35,19 +29,13 @@ export const Menu = () => {
                         </p>
                     </div>
 
-                    {/* PDF Embed */}
-                    <div className="w-full h-[600px] md:h-[800px] mb-12 bg-white rounded-3xl overflow-hidden border-4 border-[var(--color-pop-dark)] shadow-[8px_8px_0px_0px_var(--color-pop-dark)] relative group">
-                        <iframe
-                            src={brunchMenuPdf}
-                            className="w-full h-full"
-                            title="Menu Blossom Coffee"
+                    {/* Image Embed */}
+                    <div className="w-full max-w-4xl mx-auto mb-12 bg-white rounded-3xl overflow-hidden border-4 border-[var(--color-pop-dark)] shadow-[8px_8px_0px_0px_var(--color-pop-dark)] relative group">
+                        <img
+                            src={carteImg}
+                            className="w-full h-auto object-contain"
+                            alt="Menu Blossom Coffee"
                         />
-                        {/* Fallback button for mobile/unsupported browsers overlay */}
-                        <div className="absolute bottom-4 right-4 md:hidden">
-                            <a href={brunchMenuPdf} target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-[var(--color-pop-dark)] text-white text-sm font-bold rounded-full shadow-lg">
-                                Ouvrir le PDF
-                            </a>
-                        </div>
                     </div>
                 </div>
 

@@ -44,13 +44,13 @@ function App() {
       <Hero />
       <OurConcept />
       <RevealSection>
-        <Menu />
-      </RevealSection>
-      <RevealSection>
         <ImageStrip />
       </RevealSection>
       <RevealSection>
         <About />
+      </RevealSection>
+      <RevealSection>
+        <Menu />
       </RevealSection>
       <RevealSection>
         <FAQ />

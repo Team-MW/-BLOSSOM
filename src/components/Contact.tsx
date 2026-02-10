@@ -1,4 +1,4 @@
-import { Instagram, MapPin, Mail, Clock, Phone } from 'lucide-react';
+import { Instagram, MapPin, Clock, Phone } from 'lucide-react';
 
 export const Contact = ({ onOpenLegal }: { onOpenLegal: () => void }) => (
     <section id="contact" className="py-20 bg-[var(--color-pop-pink)] text-[var(--color-pop-dark)] relative overflow-hidden">
@@ -34,32 +34,29 @@ export const Contact = ({ onOpenLegal }: { onOpenLegal: () => void }) => (
                                 <Clock className="w-6 h-6 text-[var(--color-pop-yellow)] shrink-0 mt-1" />
                                 <div className="text-sm">
                                     <p className="flex justify-between w-48 border-b border-[var(--color-pop-dark)]/10 pb-1 mb-1">
-                                        <span>Lundi</span> <span>12:00–17:30</span>
+                                        <span>Lundi</span> <span>11:00–18:45</span>
                                     </p>
                                     <p className="flex justify-between w-48 border-b border-[var(--color-pop-dark)]/10 pb-1 mb-1">
-                                        <span>Mardi</span> <span>11:30–19:00</span>
+                                        <span>Mardi</span> <span>11:00–18:45</span>
                                     </p>
                                     <p className="flex justify-between w-48 border-b border-[var(--color-pop-dark)]/10 pb-1 mb-1">
-                                        <span>Mercredi</span> <span className="text-[var(--color-pop-pink)] font-bold">Fermé</span>
+                                        <span>Mercredi</span> <span>11:00–18:45</span>
                                     </p>
                                     <p className="flex justify-between w-48 border-b border-[var(--color-pop-dark)]/10 pb-1 mb-1">
-                                        <span>Jeudi</span> <span>12:00–19:00</span>
+                                        <span>Jeudi</span> <span>11:00–18:45</span>
                                     </p>
                                     <p className="flex justify-between w-48 border-b border-[var(--color-pop-dark)]/10 pb-1 mb-1">
-                                        <span>Vendredi</span> <span>11:30–19:00</span>
+                                        <span>Vendredi</span> <span>11:00–18:45</span>
                                     </p>
                                     <p className="flex justify-between w-48 border-b border-[var(--color-pop-dark)]/10 pb-1 mb-1">
-                                        <span>Samedi</span> <span>10:30–19:00</span>
+                                        <span>Samedi</span> <span>11:00–18:45</span>
                                     </p>
                                     <p className="flex justify-between w-48">
-                                        <span>Dimanche</span> <span>10:30–19:00</span>
+                                        <span>Dimanche</span> <span>11:00–18:45</span>
                                     </p>
                                 </div>
                             </div>
-                            <div className="flex items-start gap-4">
-                                <Mail className="w-6 h-6 text-[var(--color-pop-yellow)] shrink-0 mt-1" />
-                                <a href="mailto:hello@blossom.com" className="hover:text-[var(--color-pop-green)]">hello@blossom.com</a>
-                            </div>
+
                         </div>
                     </div>
 

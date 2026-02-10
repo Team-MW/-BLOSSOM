@@ -1,6 +1,6 @@
-// import brunchMenuPdf from '../assets/carte-brunch-toulouse-blossom-coffee.pdf';
+import brunchMenuPdf from '../assets/carte-brunch-toulouse-blossom-coffee.pdf';
 
-/* const MenuSection = ({ title, items, colorClass }: { title: string, items: { name: string, desc: string, price: string }[], colorClass: string }) => (
+const MenuSection = ({ title, items, colorClass }: { title: string, items: { name: string, desc: string, price: string }[], colorClass: string }) => (
     <div className="mb-12 last:mb-0">
         <h3
             className={`text-3xl md:text-5xl font-serif mb-8 text-[var(--color-pop-dark)] uppercase tracking-tight`}
@@ -26,10 +26,10 @@
             ))}
         </div>
     </div>
-); */
+);
 
 export const Menu = () => {
-    /* const pancakesSucres = [
+    const pancakesSucres = [
         {
             name: "Fruits de Saison",
             desc: "2 gros pancakes, Fruits de saison, Crémeux mascarpone à la vanille, Noisettes torréfiées",
@@ -96,15 +96,12 @@ export const Menu = () => {
             desc: "Banane, Fraise, Orange pressée, Gingembre",
             price: "5,50€"
         }
-    ]; */
+    ];
 
-    // SECTION "LA CARTE" - HIDDEN (uncomment to display)
-    return null;
-
-    /* return (
+    return (
         <section id="menu" className="py-20 bg-[var(--color-pop-cream)] relative overflow-hidden">
 
-            {/* Decorative Elements *\/}
+            {/* Decorative Elements */}
             <div className="absolute top-20 right-[-50px] w-64 h-64 bg-[var(--color-pop-pink)] rounded-full blur-3xl opacity-30 pointer-events-none" />
             <div className="absolute bottom-20 left-[-50px] w-80 h-80 bg-[var(--color-pop-yellow)] rounded-full blur-3xl opacity-20 pointer-events-none" />
 
@@ -116,29 +113,37 @@ export const Menu = () => {
                     <h2 className="text-5xl md:text-7xl font-serif text-[var(--color-pop-dark)] mb-4">
                         La Carte
                     </h2>
-                    <p className="max-w-2xl mx-auto text-lg text-[var(--color-pop-dark)]/80">
+                    <p className="max-w-2xl mx-auto text-lg text-[var(--color-pop-dark)]/80 mb-6">
                         Des produits frais, de saison, et beaucoup d'amour. Tout est fait sur place chaque matin.
                     </p>
+
+                    {/* Opening Hours Highlight */}
+                    <div className="inline-block bg-[var(--color-pop-dark)] text-[var(--color-pop-yellow)] px-6 py-3 rounded-xl border-2 border-[var(--color-pop-yellow)] shadow-[4px_4px_0px_0px_var(--color-pop-yellow)] transform -rotate-1 mb-8">
+                        <p className="text-xl font-bold font-serif">
+                            Ouvert 7j/7 • 11h00 - 18h45
+                        </p>
+                    </div>
+
+                    {/* PDF Embed */}
+                    <div className="w-full h-[600px] md:h-[800px] mb-12 bg-white rounded-3xl overflow-hidden border-4 border-[var(--color-pop-dark)] shadow-[8px_8px_0px_0px_var(--color-pop-dark)] relative group">
+                        <iframe
+                            src={brunchMenuPdf}
+                            className="w-full h-full"
+                            title="Menu Blossom Coffee"
+                        />
+                        {/* Fallback button for mobile/unsupported browsers overlay */}
+                        <div className="absolute bottom-4 right-4 md:hidden">
+                            <a href={brunchMenuPdf} target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-[var(--color-pop-dark)] text-white text-sm font-bold rounded-full shadow-lg">
+                                Ouvrir le PDF
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
                 <MenuSection title="Pancakes Sucrés" items={pancakesSucres} colorClass="var(--color-pop-pink)" />
-                <MenuSection title="Pancakes Salés" items={pancakesSales} colorClass="var(--color-pop-yellow)" />
-                <MenuSection title="Boissons & Coffee" items={boissons} colorClass="var(--color-pop-green)" />
 
-                <div className="text-center mt-16 flex flex-col md:flex-row justify-center items-center gap-6">
-                    <a href="tel:+33650216450" className="inline-block px-10 py-5 bg-[var(--color-pop-dark)] text-white font-bold rounded-full shadow-[4px_4px_0px_0px_var(--color-pop-green)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_var(--color-pop-green)] transition-all uppercase tracking-wide">
-                        Réserver ma table
-                    </a>
-                    <a
-                        href={brunchMenuPdf}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-block px-10 py-5 bg-white text-[var(--color-pop-dark)] border-2 border-[var(--color-pop-dark)] font-bold rounded-full shadow-[4px_4px_0px_0px_var(--color-pop-dark)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_var(--color-pop-dark)] transition-all uppercase tracking-wide">
-                        Voir le Menu (PDF)
-                    </a>
-                </div>
 
             </div>
         </section>
-    ); */
+    );
 };

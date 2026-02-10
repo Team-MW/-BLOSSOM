@@ -141,6 +141,8 @@ export const Menu = () => {
                 </div>
 
                 <MenuSection title="Pancakes Sucrés" items={pancakesSucres} colorClass="var(--color-pop-pink)" />
+                <MenuSection title="Pancakes Salés" items={pancakesSales} colorClass="var(--color-pop-green)" />
+                <MenuSection title="Boissons" items={boissons} colorClass="var(--color-pop-yellow)" />
 
 
             </div>

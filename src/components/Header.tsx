@@ -22,7 +22,7 @@ export const Header = () => {
 
                     {/* Desktop Links */}
                     <nav className="hidden md:flex gap-1">
-                        {['Menu', 'Concept', 'Club', 'Contact'].map((item) => (
+                        {['Concept', 'Club', 'Contact'].map((item) => (
                             <a
                                 key={item}
                                 href={`#${item.toLowerCase()}`}
@@ -59,7 +59,7 @@ export const Header = () => {
                         className="fixed inset-0 z-40 bg-white/95 backdrop-blur-xl flex flex-col items-center justify-center pt-20"
                     >
                         <nav className="flex flex-col gap-6 text-center">
-                            {['Menu', 'Concept', 'Club', 'Contact'].map((item) => (
+                            {['Concept', 'Club', 'Contact'].map((item) => (
                                 <a
                                     key={item}
                                     href={`#${item.toLowerCase()}`}

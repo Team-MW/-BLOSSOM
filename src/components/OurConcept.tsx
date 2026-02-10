@@ -101,7 +101,7 @@ export const OurConcept = () => {
                                     transition={{ duration: 0.8, delay: 0.2 }}
                                     viewport={{ once: true }}
                                     whileHover={{ scale: 1.02, rotate: -2, zIndex: 10 }}
-                                    className="border-4 border-[var(--color-pop-dark)] rounded-3xl overflow-hidden shadow-[8px_8px_0px_0px_var(--color-pop-dark)] bg-white rotate-2 transition-all duration-300"
+                                    className="border-4 border-[var(--color-pop-dark)] rounded-3xl overflow-hidden shadow-[8px_8px_0px_0px_var(--color-pop-dark)] bg-white rotate-2"
                                 >
                                     <img src={slide1} alt="Ambiance Blossom" className="w-full h-56 object-cover" />
                                 </motion.div>
@@ -111,7 +111,7 @@ export const OurConcept = () => {
                                     transition={{ duration: 0.8, delay: 0.4 }}
                                     viewport={{ once: true }}
                                     whileHover={{ scale: 1.02, rotate: 2, zIndex: 10 }}
-                                    className="border-4 border-[var(--color-pop-dark)] rounded-3xl overflow-hidden shadow-[8px_8px_0px_0px_var(--color-pop-dark)] bg-white -rotate-1 transition-all duration-300"
+                                    className="border-4 border-[var(--color-pop-dark)] rounded-3xl overflow-hidden shadow-[8px_8px_0px_0px_var(--color-pop-dark)] bg-white -rotate-1"
                                 >
                                     <img src={slide3} alt="Food Blossom" className="w-full h-48 object-cover" />
                                 </motion.div>
@@ -124,7 +124,7 @@ export const OurConcept = () => {
                                     transition={{ duration: 0.8, delay: 0.3 }}
                                     viewport={{ once: true }}
                                     whileHover={{ scale: 1.02, rotate: 2, zIndex: 10 }}
-                                    className="border-4 border-[var(--color-pop-dark)] rounded-3xl overflow-hidden shadow-[8px_8px_0px_0px_var(--color-pop-dark)] bg-white -rotate-2 transition-all duration-300"
+                                    className="border-4 border-[var(--color-pop-dark)] rounded-3xl overflow-hidden shadow-[8px_8px_0px_0px_var(--color-pop-dark)] bg-white -rotate-2"
                                 >
                                     <img src={slide2} alt="Coffee Art" className="w-full h-48 object-cover" />
                                 </motion.div>
@@ -134,7 +134,7 @@ export const OurConcept = () => {
                                     transition={{ duration: 0.8, delay: 0.5 }}
                                     viewport={{ once: true }}
                                     whileHover={{ scale: 1.02, rotate: -3, zIndex: 10 }}
-                                    className="border-4 border-[var(--color-pop-dark)] rounded-3xl overflow-hidden shadow-[8px_8px_0px_0px_var(--color-pop-dark)] bg-white rotate-3 transition-all duration-300"
+                                    className="border-4 border-[var(--color-pop-dark)] rounded-3xl overflow-hidden shadow-[8px_8px_0px_0px_var(--color-pop-dark)] bg-white rotate-3"
                                 >
                                     <img src={slide4} alt="Interior" className="w-full h-64 object-cover" />
                                 </motion.div>

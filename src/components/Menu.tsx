@@ -1,56 +1,9 @@
 import brunchMenuPdf from '../assets/carte-brunch-toulouse-blossom-coffee.pdf';
 
-const MenuSection = ({ title, items, colorClass }: { title: string, items: { name: string, desc: string, price: string }[], colorClass: string }) => (
-    <div className="mb-12 last:mb-0">
-        <h3
-            className={`text-3xl md:text-5xl font-serif mb-8 text-[var(--color-pop-dark)] uppercase tracking-tight`}
-        >
-            <span className={`bg-[${colorClass}] px-2 text-white transform -skew-x-6 inline-block`}>{title}</span>
-        </h3>
-        <div
-            className="grid md:grid-cols-2 gap-6"
-        >
-            {items.map((item, index) => (
-                <div
-                    key={index}
-                    className="bg-white border-2 border-[var(--color-pop-dark)] rounded-2xl p-6 shadow-[4px_4px_0px_0px_var(--color-pop-dark)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_var(--color-pop-dark)] transition-all cursor-default"
-                >
-                    <div className="flex justify-between items-start mb-2">
-                        <h4 className="font-serif font-bold text-xl uppercase text-[var(--color-pop-dark)]">{item.name}</h4>
-                        <span className="font-bold text-[var(--color-pop-green)] bg-[var(--color-pop-cream)] px-2 py-1 rounded-full border border-[var(--color-pop-dark)] text-sm">{item.price}</span>
-                    </div>
-                    <p className="font-medium text-[var(--color-pop-dark)]/70 text-sm leading-relaxed">
-                        {item.desc}
-                    </p>
-                </div>
-            ))}
-        </div>
-    </div>
-);
+
 
 export const Menu = () => {
-    const pancakesSucres = [
-        {
-            name: "Fruits de Saison",
-            desc: "2 gros pancakes, Fruits de saison, Crémeux mascarpone à la vanille, Noisettes torréfiées",
-            price: "9,50€"
-        },
-        {
-            name: "Beurre de Cacahuète & Spéculos",
-            desc: "2 gros pancakes, Crémeux mascarpone à la vanille, banane et spéculos",
-            price: "9,50€"
-        },
-        {
-            name: "Pistachio et Fleur d'Oranger",
-            desc: "2 gros pancakes, Coulis pistache, Crémeux mascarpone à la fleur d'oranger et aux fruits rouges frais",
-            price: "12,50€"
-        },
-        {
-            name: "Pomme Caramélisée et Canelle",
-            desc: "2 gros pancakes, Pommes caramélisée à la canelle, Coulis caramel, Crémeux mascarpone maison",
-            price: "9,50€"
-        }
-    ];
+
 
 
 
@@ -98,7 +51,6 @@ export const Menu = () => {
                     </div>
                 </div>
 
-                <MenuSection title="Pancakes Sucrés" items={pancakesSucres} colorClass="var(--color-pop-pink)" />
 
 
 

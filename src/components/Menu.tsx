@@ -52,51 +52,9 @@ export const Menu = () => {
         }
     ];
 
-    const pancakesSales = [
-        {
-            name: "The Classic Bacon",
-            desc: "2 gros pancakes, Bacon croustillant, Œuf au plat, Sirop d'érable, Beurre demi-sel",
-            price: "11,50€"
-        },
-        {
-            name: "Avocado Salmon",
-            desc: "2 gros pancakes, Saumon fumé, Avocat frais, Crème ciboulette, Graines de sésame",
-            price: "13,00€"
-        },
-        {
-            name: "Chèvre Miel & Noix",
-            desc: "2 gros pancakes, Fromage de chèvre, Miel de fleurs, Noix concassées, Roquette",
-            price: "10,50€"
-        },
-        {
-            name: "Sunny Side Up",
-            desc: "2 gros pancakes, Œufs brouillés crémeux, Champignons sautés, Tomates confites",
-            price: "11,00€"
-        }
-    ];
 
-    const boissons = [
-        {
-            name: "Latte Art Signature",
-            desc: "Double espresso, Lait micro-moussé, Design du jour",
-            price: "4,50€"
-        },
-        {
-            name: "Matcha Latte Ceremonial",
-            desc: "Thé vert Matcha bio du Japon, Lait d'avoine, Touche de vanille",
-            price: "5,00€"
-        },
-        {
-            name: "Homemade Iced Tea",
-            desc: "Thé noir, Pêche blanche, Menthe fraîche, Citron",
-            price: "4,00€"
-        },
-        {
-            name: "Fresh Smoothie",
-            desc: "Banane, Fraise, Orange pressée, Gingembre",
-            price: "5,50€"
-        }
-    ];
+
+
 
     return (
         <section id="menu" className="py-20 bg-[var(--color-pop-cream)] relative overflow-hidden">
@@ -141,8 +99,7 @@ export const Menu = () => {
                 </div>
 
                 <MenuSection title="Pancakes Sucrés" items={pancakesSucres} colorClass="var(--color-pop-pink)" />
-                <MenuSection title="Pancakes Salés" items={pancakesSales} colorClass="var(--color-pop-green)" />
-                <MenuSection title="Boissons" items={boissons} colorClass="var(--color-pop-yellow)" />
+
 
 
             </div>
